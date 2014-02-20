@@ -3,7 +3,7 @@ coffee-breakout
 
 Simple breakout game.
 
-To build:
+##Build process:
 
 1. npm install
 2. grunt
