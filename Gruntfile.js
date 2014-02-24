@@ -1,5 +1,9 @@
 module.exports = function(grunt) {
 
+    require('load-grunt-tasks')(grunt, {pattern: 'grunt-*'});
+
+    require('time-grunt')(grunt);
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -35,10 +39,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-coffee');
-    
     // Default task(s).
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['coffee', 'less']);
+    grunt.registerTask('track', ['watch']);
 };

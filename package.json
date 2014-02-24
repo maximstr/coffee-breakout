@@ -1,10 +1,12 @@
 {
-	"name": "coffee-breakout",
-	"version": "0.1.0",
-	"devDependencies": {
-		"grunt": "*",
-		"grunt-contrib-watch": "*",
-		"grunt-contrib-less": "*",
-		"grunt-contrib-coffee ": "*"
-	}
+  "name": "coffee-breakout",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-coffee": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
+  }
 }
